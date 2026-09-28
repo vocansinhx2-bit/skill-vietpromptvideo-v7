@@ -1,0 +1,13 @@
+type: object
+required: [status, gates]
+properties:
+  status: {enum: [PASS, WARN, FAIL]}
+  gates:
+    type: object
+    properties:
+      creator_commentary_leakage: {enum: [PASS, WARN, FAIL]}
+      training_example_contamination: {enum: [PASS, WARN, FAIL]}
+      provenance_leakage: {enum: [PASS, WARN, FAIL]}
+      audience_mismatch: {enum: [PASS, WARN, FAIL]}
+      non_operational_bloat: {enum: [PASS, WARN, FAIL]}
+      example_anchoring: {enum: [PASS, WARN, FAIL]}

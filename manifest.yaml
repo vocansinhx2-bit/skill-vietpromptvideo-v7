@@ -1,0 +1,111 @@
+name: prompt-architect-video-generation-compiler
+version: 7.4.0
+interface_language: vi
+generation_language_default: en
+entrypoint: SKILL.md
+default_video_model: seedance_2_5
+model_profiles:
+  - model_profiles/seedance_2_5.md
+  - model_profiles/seedance_2_0.md
+capabilities:
+  - build_master_system
+  - audit_master_system
+  - build_video_prompt
+  - build_reference_prompt
+  - storyboard_handoff
+  - debug_generation
+  - distill_training_examples
+  - migrate_master_system
+  - direct_video_scene
+  - consume_image_skill_output
+  - plan_sequence_film
+brain_modules:
+  - modules/46_VIDEO_SCENE_DIRECTOR_BRAIN.md
+  - modules/47_IMAGE_SKILL_BRIDGE.md
+  - modules/48_BODY_HANDS_GROUP_INTEGRITY.md
+craft_modules:
+  - modules/49_CINEMATIC_CRAFT_ENGINE.md
+  - modules/50_GENRE_PLAYBOOKS.md
+  - modules/51_SEQUENCE_FILM_PLANNER.md
+  - modules/52_ACTION_CHOREOGRAPHY_ENGINE.md
+  - modules/53_ANIMATION_STYLE_ENGINE.md
+  - modules/20_STORY_BEAT_PAYOFF.md
+  - modules/12_CONTENT_DIVERSITY_STRATEGY.md
+debug_modules:
+  - modules/22_SPATIAL_LEDGER_SCREEN_GEOGRAPHY.md
+  - modules/27_STATE_HANDSHAKE_CONTINUITY.md
+  - modules/42_RUNTIME_FAILURE_ROUTER.md
+templates:
+  - templates/video_setup_plan_template.md
+  - templates/video_generation_prompt_template.md
+  - templates/sequence_plan_template.md
+hard_gates:
+  - creator_commentary_leakage
+  - training_example_contamination
+  - provenance_leakage
+  - audience_mismatch
+  - non_operational_bloat
+  - example_anchoring
+video_gates:
+  - scene_dna_incomplete
+  - video_mode_mismatch
+  - segment_overloaded
+  - segment_underfilled
+  - speaker_ambiguity
+  - duplicate_action_description
+  - reference_vs_lastframe_conflict
+  - orientation_unlocked
+  - screen_geography_flip
+  - hand_ownership_missing
+  - identity_lock_missing
+craft_gates:
+  - hook_weak
+  - flat_curve
+  - peak_misplaced
+  - payoff_unplanted
+  - emotion_style_mismatch
+  - generic_adjective_bloat
+  - uniform_rhythm
+  - no_signature_moment
+  - sound_flat
+sequence_gates:
+  - sequence_no_arc
+  - coverage_monotony
+  - bible_missing
+  - join_unplanned
+  - hero_underbudgeted
+  - clip_overpacked
+action_gates:
+  - action_no_contact
+  - fighter_merge
+  - exchange_overload
+  - camera_stack
+  - axis_break
+  - weightless_motion
+  - no_recovery_state
+  - crowd_simultaneous
+  - slowmo_overuse
+  - graphic_risk
+animation_gates:
+  - style_unnamed
+  - style_mix
+  - lens_grammar_in_2d
+  - photoreal_drift
+  - boiling_lines
+  - floaty_motion
+  - face_melt_action
+  - palette_swap
+  - studio_name_risk
+  - exclusion_list_missing
+vfx_modules:
+  - modules/54_VFX_EFFECT_PERSISTENCE_ENGINE.md
+vfx_gates:
+  - effect_persistence_loss
+  - effect_detached
+  - effect_static_overlay
+  - effect_no_endpoint
+  - effect_stack
+  - effect_body_corruption
+  - effect_style_drift
+  - effect_chain_break
+  - effect_label_only

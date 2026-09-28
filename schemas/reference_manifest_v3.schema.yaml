@@ -1,0 +1,15 @@
+type: object
+properties:
+  references:
+    type: array
+    items:
+      type: object
+      required: [id, type, entity, authoritative_for]
+      properties:
+        id: {type: string}
+        type: {type: string}
+        entity: {type: string}
+        authoritative_for: {type: array}
+        not_authoritative_for: {type: array}
+        active_scope: {type: string}
+        leakage_risks: {type: array}

@@ -1,0 +1,19 @@
+type: object
+required: [runtime_objective, target_reader, output_contract]
+properties:
+  runtime_objective: {type: string}
+  target_reader: {enum: [RUNTIME_AI, HUMAN_DESIGNER, AUDITOR]}
+  inputs: {type: array}
+  invariants: {type: array}
+  variables: {type: array}
+  decision_points: {type: array}
+  routing: {type: array}
+  workflow: {type: array}
+  content_mechanisms: {type: array}
+  diversity_dimensions: {type: array}
+  precedence: {type: array}
+  runtime_self_check: {type: array}
+  output_contract: {type: object}
+  design_evidence:
+    type: object
+    description: Quarantined; never compiled automatically.

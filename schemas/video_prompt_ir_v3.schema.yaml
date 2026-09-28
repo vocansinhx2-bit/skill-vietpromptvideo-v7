@@ -1,0 +1,15 @@
+type: object
+properties:
+  artifact_audience: {const: VIDEO_MODEL}
+  intent: {type: string}
+  model_profile: {type: string}
+  output_spec: {type: object}
+  entities: {type: array}
+  invariants: {type: array}
+  references: {type: array}
+  sequence: {type: array}
+  shots: {type: array}
+  state_transitions: {type: array}
+  camera: {type: object}
+  audio: {type: object}
+  evidence_quarantine: {type: array, description: Never compile automatically}
